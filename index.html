@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップページ ー蓬莱マリーナ</title>
+    <meta name="description" content="会員制の船の停泊所">
+    <meta name="robots" content="noindex, nofollow">
+      <!-- favicon-->
+      <link rel="icon" href="images/android-chrome-192x192.png" type="image/png">
+      <!-- reset css -->
+      <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+      <!-- 日本語 Noto Sans -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Noto+Sans+JP&family=Philosopher&display=swap" rel="stylesheet">
+    <!-- 英語 Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Noto+Sans+JP&family=Philosopher&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+        <!-- ページトップボタン -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <p class="pagetop"><a href="#wrap"><img src="images/pagetop.png" alt="">
+        </a></p>
+        <script>
+          $(document).ready(function() {
+            var pagetop = $('.pagetop');
+              $(window).scroll(function () {
+                 if ($(this).scrollTop() > 100) {
+                      pagetop.fadeIn();
+                 } else {
+                      pagetop.fadeOut();
+                      }
+                 });
+                 pagetop.click(function () {
+                     $('body, html').animate({ scrollTop: 0 }, 500);
+                        return false;
+                      });
+          });
+        </script><!-- ページトップボタン終わり -->
+  </head>
+
+  <body>
+    <div id="home">
+      <!--page header -->
+      <header class="page-header wrapper">
+        <h1>
+          <a href="index.html">
+            <img src="images/A_company_name_new.svg" alt="蓬莱マリーナホームへ" class="logo">
+          </a>
+        </h1>
+        <!-- nav -->
+        <nav>
+          <p class="tel-nun"><span><img src="images/TEL.png" alt=""></span>
+            <a href="tel:123-456-7890">123-456-7890</a>
+          </p>
+          <ul class="main-nav d-flex">
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#calendar-area">Calendar</a></li>
+            <li><a href="#camera-weather">Web&nbsp;Camera</a></li>
+            <li><a href="#qa">FAQ</a></li>
+            <li><a href="#access">Access</a></li>
+          </ul>
+        </nav>  <!-- /nav -->
+      </header>
+    </div>
+
+    <main>
+      <!-- メインビジュアル -->
+      <div class="main-visual">
+        <img src="images/mvboat.png" alt="メインビジュアル" class="m">
+      </div>
+
+      <!-- トピックス -->
+      <section id="topics">
+        <div class="topics-inner">
+          <div class="topics-box">
+            <h2>Topics<br>
+            <span>お知らせ</span>
+            </h2><br>
+            <ul>
+              <li>
+                <time datetime="2023-08-12">
+                  2023.08.12
+                </time>&nbsp;ホームページを開設しました
+              </li>
+              <li>
+                <time datetime="2023-08-15">
+                  2023.08.15
+                </time>&nbsp;台風7号接近の為、8月15（火）は臨時休業させていただきます。
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ボート -->
+      <section id="calendar-area">
+        <section id="about">
+          <div class="about-box">
+            <div class="right">
+              <div class="side_text">
+                <div class="calendar-box">
+                  <h2>Calendar<br>
+                    <span>予約状況</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="side_bottom">
+                <div class="shake-slow">
+                  <img src="images/boat_ojisan.png" alt="" width="500px" height="auto">
+                </div>
+                <p>当社施設はボートの保管を目的としています。<br>また、マリーナは完全会員制となっております。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ↑↑↑↑↑↑↑↑↑↑ ボート -->
+
+        <!-- カレンダー -->
+        <section id="calendar">
+          <div class="left">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%230088d8&ctz=Asia%2FTokyo&showNav=1&showTitle=0&showTabs=0&showCalendars=1&title=%E8%93%AC%E8%8E%B1%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%8A%E3%81%94%E4%BA%88%E7%B4%84%E7%8A%B6%E6%B3%81&showPrint=0&showTz=0&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB" style="border-width:0" width="800" height="500" frameborder="0" scrolling="no"></iframe>
+            <p>凡例：〇 予約可能&nbsp;、&nbsp;✕ 予約不可</p>
+          </div>
+        </section>
+        <!-- ↑↑↑↑↑↑↑↑↑↑ カレンダー -->
+      </section>
+        
+      <!-- ウェブカメラ -->
+      <section id="camera-weather">
+        <section id="web-camera">
+          <div class = "web-camera-box">
+            <h2>Web&nbsp;Camera<br>
+                <span>現在の琵琶湖の様子</span>
+            </h2>
+          </div>
+          
+          <section class="web-camera-area">
+            <div class="web-camera-img">
+              <iframe width="700" height="600" src="https://www.youtube.com/embed/cKwqVJgqPGI?si=A7DlJHq6lheKlD2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </section>
+        </section><!-- ウェブカメラ -->
+
+        <!-- 天気情報 -->
+        <section id="weather">
+          <div class ="weather-box">
+            <h2>Weather<br>
+              <span>天気情報</span>
+            </h2>
+          </div>
+          <section class="weather-area">
+            <div class="weather-img">
+              <iframe width="700" height="600" src="https://embed.windy.com/embed2.html?lat=35.061&lon=135.909&detailLat=35.163&detailLon=135.924&width=650&height=450&zoom=10&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+            </div>
+          </section>
+        </section><!-- 天気情報 -->
+      </section>
+
+      <!-- よくある質問 -->
+      <section id="qa">
+        <div class="qa-inner">
+          <div class="qa-box">
+            <h2>
+              <img src="images/logo.png" alt="ロゴ" width="200px height200px">FAQ<br>
+              <span>よくある質問</span>
+            </h2>
+          </div>
+          <div class="faq-area">
+            <div class="faq-content1">
+              <div class="faq-Q1">
+                <img src="images/Q.png" alt="Q">
+                &nbsp;新規会員にはなれますか？
+              </div>
+              <div class="faq-A1">
+                <img src="images/A.png" alt="A">&nbsp;会員の方からの推薦、もしくは社内の審査等がない限りお断りしています。
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="faq-content2">
+              <div class="faq-Q2">
+                <img src="images/Q.png" alt="Q">&nbsp;予約はできますか？
+              </div>
+              <div class="faq-A2">
+                <img src="images/A.png" alt="A">
+                &nbsp;一日数組のみで、ご会員様ご予約の方のみご利用いただけます。
+              </div>
+            </div>
+            <hr>
+            <br>
+            <div class="faq-content3">
+              <div class="faq-Q3">
+                <img src="images/Q.png" alt="Q">
+                &nbsp;予約するにはどうしたらいいですか？
+              </div>
+              <div class="faq-A3">
+                <img src="images/A.png" alt="A">
+                &nbsp;ご予約はお電話のみ承っております。
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div><!--  -->
+      </section>
+      
+      <!-- アクセス -->
+      <section id="access">
+        <div class="fish12">
+          <!-- 小さい魚 -->
+          <img src="images/fish_left.svg" class="fish-left3">
+        </div>
+        <div class="access-box">
+          <div class="right">
+            <h2>ACCESS<br>
+              <span>アクセス</span>
+            </h2><br>
+            <p>〒123-4567</p>
+            <p>滋賀県大津市未来89-10</p><br>
+            <a href="https://maps.app.goo.gl/NHt9xoFa5TfAkLx39" target="_blank">
+              <p class="map">Google map</p>
+            </a>
+            <p><a href="tel:123-456-7890">123-456-7890</a></p>
+        </div>
+        <div class="left">
+          <h3>お車でお越しの方</h3>
+          <p>・滋賀県以西よりお越しの方<br>
+             名神高速道路京都東IC下車→湖西道路大津方面を経由→未来IC下車約10分
+          </p><br>
+          <p>・湖東方面よりお越しの方<br>
+            名神高速道路竜王IC下車→右方向へ国道477号線近江八幡方面<br>
+            琵琶湖大橋を経由 → 琵琶湖大橋交差点を右折→県道558号線未来方面約10分
+          </p><br><br>
+          <h3>電車でお越しの方</h3>
+          <p>JR湖西線 未来駅下車 徒歩約2分</p></div>
+        </div>
+      </section><!-- アクセス -->
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div class="shake-hard">
+          <img src="images/ojisan_new.svg" alt="">
+        </div>
+        <p>
+          <small>&copy; 2023 有限会社 蓬莱マリーナ</small>
+        </p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/jquery.ripples-min.js"></script>
+  <script src="js/vscode.js"></script>
+  </body>
+</html>
