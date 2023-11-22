@@ -6,41 +6,25 @@
     <title>トップページ ー蓬莱マリーナ</title>
     <meta name="description" content="会員制の船の停泊所">
     <meta name="robots" content="noindex, nofollow">
-      <!-- favicon-->
-      <link rel="icon" href="images/android-chrome-192x192.png" type="image/png">
-      <!-- reset css -->
-      <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-      <!-- 日本語 Noto Sans -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- favicon-->
+    <link rel="icon" href="images/android-chrome-192x192.png" type="image/png">  
+    <!-- 日本語 Noto Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Noto+Sans+JP&family=Philosopher&display=swap" rel="stylesheet">
     <!-- 英語 Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Noto+Sans+JP&family=Philosopher&family=Roboto&display=swap" rel="stylesheet">
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
-        <!-- ページトップボタン -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <p class="pagetop"><a href="#wrap"><img src="images/pagetop.png" alt="">
-        </a></p>
-        <script>
-          $(document).ready(function() {
-            var pagetop = $('.pagetop');
-              $(window).scroll(function () {
-                 if ($(this).scrollTop() > 100) {
-                      pagetop.fadeIn();
-                 } else {
-                      pagetop.fadeOut();
-                      }
-                 });
-                 pagetop.click(function () {
-                     $('body, html').animate({ scrollTop: 0 }, 500);
-                        return false;
-                      });
-          });
-        </script><!-- ページトップボタン終わり -->
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer=""></script>
+    <script src="js/jquery.ripples-min.js" defer></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+    <script src="js/vscode.js" defer></script>
   </head>
-
   <body>
     <div id="home">
       <!--page header -->
@@ -65,19 +49,17 @@
         </nav>  <!-- /nav -->
       </header>
     </div>
-
     <main>
       <!-- メインビジュアル -->
       <div class="main-visual">
         <img src="images/mvboat.png" alt="メインビジュアル" class="m">
       </div>
-
       <!-- トピックス -->
       <section id="topics">
         <div class="topics-inner">
           <div class="topics-box">
             <h2>Topics<br>
-            <span>お知らせ</span>
+              <span>お知らせ</span>
             </h2><br>
             <ul>
               <li>
@@ -111,7 +93,10 @@
                 <div class="shake-slow">
                   <img src="images/boat_ojisan.png" alt="" width="500px" height="auto">
                 </div>
-                <p>当社施設はボートの保管を目的としています。<br>また、マリーナは完全会員制となっております。</p>
+                <p>
+                  当社施設はボートの保管を目的としています。<br>
+                  また、マリーナは完全会員制となっております。
+                </p>
               </div>
             </div>
           </div>
@@ -133,7 +118,7 @@
         <section id="web-camera">
           <div class = "web-camera-box">
             <h2>Web&nbsp;Camera<br>
-                <span>現在の琵琶湖の様子</span>
+              <span>現在の琵琶湖の様子</span>
             </h2>
           </div>
           
@@ -236,6 +221,11 @@
           <h3>電車でお越しの方</h3>
           <p>JR湖西線 未来駅下車 徒歩約2分</p></div>
         </div>
+        <p class="pagetop">
+          <a href="#home">
+            <img src="images/pagetop.png" alt="">
+          </a>
+        </p>
       </section><!-- アクセス -->
     </main>
     <footer>
@@ -248,8 +238,5 @@
         </p>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="js/jquery.ripples-min.js"></script>
-  <script src="js/vscode.js"></script>
   </body>
 </html>
